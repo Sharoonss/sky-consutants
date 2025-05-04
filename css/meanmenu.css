@@ -8,7 +8,9 @@
 
 /* hide the link until viewport size is reached */
 a.meanmenu-reveal {
+  
   display: none;
+
 }
 
 /* when under viewport size, .mean-container is added to body */

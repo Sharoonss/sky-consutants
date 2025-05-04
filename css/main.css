@@ -615,7 +615,7 @@ img {
   left: 0;
   width: 45px;
   height: 100%;
-  background-color: var(--tj-color-theme-primary);
+  background-color: #D80000;
   border-radius: 50px;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -3151,7 +3151,7 @@ img {
   z-index: 1;
 }
 .hero-content .hero-title {
-  color: var(--tj-color-common-white);
+  color: #D80000;
   letter-spacing: -0.025em;
   line-height: 1.1;
   margin-bottom: 20px;
@@ -7601,7 +7601,7 @@ blockquote cite::before {
   margin-inline-end: 30px;
 }
 .skill-wrapper .title {
-  color: var(--tj-color-common-white);
+  color:black;
   letter-spacing: -0.025em;
   margin-bottom: 15px;
 }
