@@ -594,7 +594,7 @@ img {
   line-height: 1;
   font-weight: var(--tj-fw-bold);
   color: var(--tj-color-common-white);
-  background-color: var(--tj-color-theme-dark);
+  background-color:#022279;
   padding: 5.5px;
   border-radius: 50px;
   position: relative;
@@ -3542,9 +3542,11 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  
 }
 .tj-feature-section .sec-heading .desc p:last-child {
   margin-bottom: 0;
+  
 }
 
 .tj-feature-section-two {
@@ -3556,6 +3558,10 @@ img {
   width: 100%;
   margin-left: 0;
   margin-bottom: 50px;
+  
+}
+.sec-title.text-anim{
+  color:#022279;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tj-feature-section-two .sec-heading .sec-title {
@@ -7013,7 +7019,7 @@ blockquote cite::before {
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #06164A;
   position: relative;
   z-index: 5;
   margin-bottom: 30px;
@@ -10866,7 +10872,7 @@ blockquote cite::before {
   font-weight: var(--tj-fw-bold);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--tj-color-theme-primary);
+  color:#D80000;
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 15px;
@@ -10882,7 +10888,7 @@ blockquote cite::before {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-color: var(--tj-color-theme-primary);
+  background-color: #D80000;
 }
 .sec-heading .sub-title::after {
   left: auto;
