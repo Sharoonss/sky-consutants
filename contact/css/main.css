@@ -2880,10 +2880,10 @@ img {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgba(5, 18, 41, 0.8);
+  background-color: white;
 }
 .tj-page-title {
-  color: var(--tj-color-common-white);
+  color: #022279;
   font-size: 48px;
   margin-bottom: 0;
 }
@@ -2918,7 +2918,7 @@ img {
   z-index: 2;
 }
 .tj-page-link span {
-  color: var(--tj-color-common-white);
+  color:#022279;
   font-size: 16px;
   position: relative;
   display: inline-block;
@@ -10138,7 +10138,7 @@ blockquote cite::before {
   margin: 0 auto;
 }
 .contact-item.style-2:hover .contact-icon {
-  background: var(--tj-color-theme-primary);
+  background: #022279;
 }
 .contact-item.style-2:hover .contact-icon i {
   color: var(--tj-color-common-white);
@@ -10167,11 +10167,12 @@ blockquote cite::before {
 }
 .contact-item.style-2 .contact-icon i {
   font-size: 32px;
-  color: var(--tj-color-theme-primary);
+  color: #022279;
 }
 .contact-item.style-2 .contact-title {
   font-size: 24px;
   margin-bottom: 15px;
+  color: #022279;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-item.style-2 .contact-title {
@@ -10866,7 +10867,7 @@ blockquote cite::before {
   font-weight: var(--tj-fw-bold);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--tj-color-theme-primary);
+  color: #D80000;
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 15px;
@@ -10882,7 +10883,7 @@ blockquote cite::before {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-color: var(--tj-color-theme-primary);
+  background-color:#D80000;
 }
 .sec-heading .sub-title::after {
   left: auto;
@@ -10890,6 +10891,7 @@ blockquote cite::before {
 }
 .sec-heading .sec-title {
   margin: 0;
+  color: #022279;
 }
 .sec-heading .sec-title span {
   color: var(--tj-color-theme-primary);
