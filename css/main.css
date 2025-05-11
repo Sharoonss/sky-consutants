@@ -926,7 +926,7 @@ img {
   z-index: 100;
 }
 .tj-header-area.header-1 .menu_btn {
-  color: var(--tj-color-common-white);
+  color: #022279;
   margin-left: 10px;
 }
 .tj-header-area.header-2 {
@@ -1699,7 +1699,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--tj-color-theme-dark);
+  background-color: white;
   z-index: -1;
   backdrop-filter: blur(37px);
 }
@@ -1721,7 +1721,7 @@ img {
   display: inline-block;
   font-size: 35px;
   line-height: 1;
-  color: var(--tj-color-common-white);
+  color: black;
 }
 @media (max-width: 575px) {
   .hamburger_close_btn {
@@ -1748,7 +1748,7 @@ img {
   height: 60px;
   line-height: 60px;
   padding: 0 25px;
-  background: rgba(247, 247, 247, 0.1);
+  background: rgba(14, 14, 14, 0.1);
   border: none;
   outline: none;
   font-size: 18px;
@@ -1758,13 +1758,13 @@ img {
 .hamburger_search .nice-select::-ms-input-placeholder,
 .hamburger_search input:not([type=submit]):not([type=radio]):not([type=checkbox])::-ms-input-placeholder,
 .hamburger_search input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(56, 55, 55, 0.6);
 }
 .hamburger_search select::placeholder,
 .hamburger_search .nice-select::placeholder,
 .hamburger_search input:not([type=submit]):not([type=radio]):not([type=checkbox])::placeholder,
 .hamburger_search input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(10, 9, 9, 0.6);
 }
 .hamburger_search button {
   position: absolute;
@@ -1776,7 +1776,7 @@ img {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 18px;
-  color: var(--tj-color-common-white);
+  color: black;
 }
 .hamburger_menu {
   display: block;
@@ -1858,7 +1858,7 @@ img {
 }
 
 .hamburger-title {
-  color: var(--tj-color-common-white);
+  color: #022279;
   font-size: 25px;
   margin-bottom: 20px;
   position: relative;
@@ -1872,17 +1872,17 @@ img {
   padding-top: 20px;
 }
 .contact-info .contact_item:first-child {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(15, 15, 15, 0.1);
 }
 .contact-info .contact_item .subtitle {
   display: block;
-  color: var(--tj-color-common-black-3);
+  color: #022279;
   font-size: 15px;
   line-height: 1;
   margin-bottom: 8px;
 }
 .contact-info .contact_item .text {
-  color: var(--tj-color-common-white);
+  color: #022279;
   font-size: 18px;
   line-height: 1;
 }
@@ -1918,14 +1918,14 @@ img {
   line-height: 1;
 }
 .hamburger-socials ul li a i {
-  color: var(--tj-color-heading-primary);
+  color: #022279;
 }
 .hamburger-socials ul li a:hover {
   background-color: var(--tj-color-theme-primary);
   color: var(--tj-color-common-white);
 }
 .hamburger-socials ul li a:hover i {
-  color: var(--tj-color-common-white);
+  color: #D80000;
 }
 
 .hamburger_logo .mobile_logo {
