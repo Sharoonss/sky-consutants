@@ -96,6 +96,152 @@
         padding-top:2px;/* Red color as specified */
         padding-bottom:2px; /* Blue color as specified */
     }
+
+     .agent-container {
+            position: relative;
+            width: 100%;
+            height:100vh;
+        }
+        
+        .agent-wave-top, .agent-wave-bottom {
+            width: 100%;
+            height: 50px;
+            background-color: #022279;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+        
+        .agent-wave-top {
+            top: 0;
+            border-radius: 0 0 50% 50% / 0 0 100% 100%;
+            transform: scaleX(1.5);
+        }
+        
+        .agent-wave-bottom {
+            bottom: 0;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+            transform: scaleX(1.5);
+        }
+        
+        .agent-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        
+        .agent-form-container {
+            background: linear-gradient(135deg, #022279 0%, #D80000 100%);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 1000px;
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .agent-form-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255,255,255,0.1);
+            z-index: 0;
+        }
+        
+        .agent-form-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .agent-heading-primary {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .agent-heading-secondary {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+        
+        .agent-partner-btn {
+            background-color: #022279;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .agent-partner-btn:hover {
+            background-color: #D80000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        .agent-color-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(2, 34, 121, 0.7) 0%, rgba(216, 0, 0, 0.7) 100%);
+            z-index: -1;
+        }
+        
+       
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .agent-heading-primary {
+                font-size: 1.8rem;
+            }
+            
+            .agent-heading-secondary {
+                font-size: 1.2rem;
+                margin-bottom: 30px;
+            }
+            
+            .agent-partner-btn {
+                padding: 12px 24px;
+                font-size: 1rem;
+            }
+            
+            .agent-form-container {
+                padding: 30px 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .agent-heading-primary {
+                font-size: 1.5rem;
+            }
+            
+            .agent-heading-secondary {
+                font-size: 1rem;
+                margin-bottom: 25px;
+            }
+            
+            .agent-partner-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
    </style>
 </head>
 
@@ -418,19 +564,19 @@
                   </div>
                   <div class="hero-images-box">
                      <div class="hero-images">
-                        <img src="images/g1.png" alt="Images">
+                        <img src="/visa.jpg" alt="Images">
                      </div>
                      <div class="images-shapes move-anim-2">
                         <img src="images/hero-2.png" alt="Shapes">
                      </div>
-                     <!-- <div class="hero-circle">
+                      <div class="hero-circle">
                         <div class="circle-wrap">
                            <img class="rotate-image" src="images/play-text.png" alt="image">
                            <a class="circle video-popup" data-autoplay="true" data-vbtype="video" data-maxwidth="1200px" href="https://www.youtube.com/watch?v=MLpWrANjFbI">
                               <i class="fa-sharp fa-solid fa-play"></i>
                            </a>
                         </div>
-                     </div> -->
+                     </div> 
                   </div>
                </div>
             </div>
@@ -1034,7 +1180,7 @@
                               <div class="project-item">
                                  <div class="project-image">
                                     <a class="cursor-hide" href="project-details.html">
-                                       <img src="images/h1-project-4.webp" alt="Images">
+                                       <img src="/canada.png" alt="Images">
                                     </a>
                                  </div>
                                  <div class="project-content">
@@ -1230,7 +1376,22 @@
          </div>
       </section>
       <!-- end: Blog Section -->
-
+   <div class="agent-container">
+        <div class="agent-wave-top"></div>
+        
+        <div class="agent-content-wrapper">
+            <div class="agent-form-container">
+                <div class="agent-background-image"></div>
+                <div class="agent-color-overlay"></div>
+                <div class="agent-form-content">
+                    <h1 class="agent-heading-primary">New Agent Partnership Registration</h1>
+                    <button class="agent-partner-btn">BECOME OUR PARTNER</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="agent-wave-bottom"></div>
+    </div>
       <!-- start: Brand Section -->
       <section class="tj-brand-section">
          <div class="container">
@@ -1241,62 +1402,47 @@
                         <div class="swiper-wrapper brand_wrapper">
                            <div class="swiper-slide">
                               <div class="brand-logo">
-                                 <img src="images/brand-thumb-1.png" alt="Brand">
+                                 <img src="/logo/WhatsApp Image 2025-05-10 at 04.52.15.jpeg" alt="Brand">
                               </div>
                            </div>
                            <div class="swiper-slide">
                               <div class="brand-logo">
-                                 <img src="images/brand-thumb-2.png" alt="Brand">
+                                 <img src="/logo/WhatsApp Image 2025-05-10 at 10.06.24 (1).jpeg" alt="Brand">
                               </div>
                            </div>
                            <div class="swiper-slide">
                               <div class="brand-logo">
-                                 <img src="images/brand-thumb-3.png" alt="Brand">
+                                 <img src="/logo/WhatsApp Image 2025-05-10 at 10.06.24 (2).jpeg" alt="Brand">
                               </div>
                            </div>
                            <div class="swiper-slide">
                               <div class="brand-logo">
-                                 <img src="images/brand-thumb-4.png" alt="Brand">
+                                 <img src="/logo/WhatsApp Image 2025-05-10 at 10.06.24 (3).jpeg" alt="Brand">
                               </div>
                            </div>
                            <div class="swiper-slide">
                               <div class="brand-logo">
-                                 <img src="images/brand-thumb-5.png" alt="Brand">
+                                 <img src="/logo/WhatsApp Image 2025-05-10 at 10.06.24.jpeg" alt="Brand">
                               </div>
                            </div>
                            <div class="swiper-slide">
                               <div class="brand-logo">
-                                 <img src="images/brand-thumb-6.png" alt="Brand">
+                                 <img src="/logo/WhatsApp Image 2025-05-10 at 10.06.25 (1).jpeg" alt="Brand">
                               </div>
                            </div>
                            <div class="swiper-slide">
                               <div class="brand-logo">
-                                 <img src="images/brand-thumb-1.png" alt="Brand">
+                                 <img src="logo/WhatsApp Image 2025-05-10 at 10.06.25 (2).jpeg" alt="Brand">
                               </div>
                            </div>
                            <div class="swiper-slide">
                               <div class="brand-logo">
-                                 <img src="images/brand-thumb-2.png" alt="Brand">
+                                 <img src="/logo/WhatsApp Image 2025-05-10 at 10.06.25 (3).jpeg" alt="Brand">
                               </div>
                            </div>
                            <div class="swiper-slide">
                               <div class="brand-logo">
-                                 <img src="images/brand-thumb-3.png" alt="Brand">
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="brand-logo">
-                                 <img src="images/brand-thumb-4.png" alt="Brand">
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="brand-logo">
-                                 <img src="images/brand-thumb-5.png" alt="Brand">
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="brand-logo">
-                                 <img src="images/brand-thumb-6.png" alt="Brand">
+                                 <img src="/logo/WhatsApp Image 2025-05-10 at 10.06.25.jpeg" alt="Brand">
                               </div>
                            </div>
                         </div>
@@ -1306,6 +1452,7 @@
             </div>
          </div>
       </section>
+   
       <!-- end: Brand Section -->
    </main>
 <!-- WhatsApp Button HTML -->
