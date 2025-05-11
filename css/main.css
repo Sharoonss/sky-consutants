@@ -3417,7 +3417,7 @@ img {
   mask-image: url(../images/h1-hero-video.svg);
   mask-repeat: no-repeat;
   mask-size: contain;
-  background-color: var(--tj-color-theme-dark);
+  background-color: white;
   mask-position: center;
   z-index: 1;
 }
@@ -3443,7 +3443,7 @@ img {
   animation: rotateImg 10s infinite linear;
 }
 .hero-circle .circle-wrap .rotate-image textPath {
-  fill: var(--tj-color-common-white);
+  fill: #D80000;
 }
 .hero-circle .circle-wrap .circle {
   display: inline-flex;
@@ -3451,7 +3451,7 @@ img {
   justify-content: center;
   width: 58px;
   height: 58px;
-  color: var(--tj-color-common-white);
+  color:white;
   background: var(--tj-color-theme-primary);
   border-radius: 50%;
   text-decoration: none;
