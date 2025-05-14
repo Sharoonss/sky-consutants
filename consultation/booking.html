@@ -1,4 +1,6 @@
-<!DOCTYPE html><html class="no-js" lang="en"><head>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
    <meta charset="utf-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,9 +9,9 @@
    <!-- Site Title -->
    <title>Sky consultants</title>
 
-   <!-- Place favicon.ico in the root directory -->
-   <link rel="apple-touch-icon" href="/Sky svg.png">
-   <link rel="shortcut icon" type="image/x-icon" href="/Sky svg.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="/Sky svg.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/Sky svg.png">
    <!-- CSS here -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/font-awesome-pro.min.css">
@@ -21,6 +23,143 @@
    <link rel="stylesheet" href="css/venobox.min.css">
    <link rel="stylesheet" href="css/meanmenu.css">
    <link rel="stylesheet" href="css/main.css">
+   
+   <!-- Internal CSS for the form -->
+   <style>
+     .booking-form-section {
+       padding: 80px 0;
+       background-color: #f9f9f9;
+     }
+     
+     .booking-form-container {
+       max-width: 800px;
+       margin: 0 auto;
+       background: #fff;
+       padding: 40px;
+       border-radius: 10px;
+       box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+     }
+     
+     .booking-form-title {
+       text-align: center;
+       margin-bottom: 40px;
+     }
+     
+     .booking-form-title h3 {
+       font-size: 32px;
+       font-weight: 700;
+       color: #222;
+       margin-bottom: 15px;
+     }
+     
+     .booking-form-title p {
+       color: #666;
+       font-size: 16px;
+     }
+     
+     .form-group {
+       margin-bottom: 25px;
+     }
+     
+     .form-group label {
+       display: block;
+       margin-bottom: 8px;
+       font-weight: 500;
+       color: #333;
+     }
+     
+     .form-control {
+       width: 100%;
+       height: 50px;
+       padding: 0 15px;
+       border: 1px solid #e0e0e0;
+       border-radius: 5px;
+       font-size: 15px;
+       transition: all 0.3s ease;
+     }
+     
+     .form-control:focus {
+       border-color: #0d6efd;
+       box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+       outline: none;
+     }
+     
+     .form-row {
+       display: flex;
+       flex-wrap: wrap;
+       margin-right: -15px;
+       margin-left: -15px;
+     }
+     
+     .form-col {
+       flex: 0 0 50%;
+       max-width: 50%;
+       padding: 0 15px;
+     }
+     
+     @media (max-width: 767px) {
+       .form-col {
+         flex: 0 0 100%;
+         max-width: 100%;
+       }
+     }
+     
+     .checkbox-group {
+       display: flex;
+       align-items: center;
+       margin-bottom: 15px;
+     }
+     
+     .checkbox-group input[type="checkbox"] {
+       margin-right: 10px;
+     }
+     
+     .file-upload {
+       border: 2px dashed #e0e0e0;
+       padding: 30px;
+       text-align: center;
+       border-radius: 5px;
+       cursor: pointer;
+       transition: all 0.3s ease;
+       margin-bottom: 25px;
+     }
+     
+     .file-upload:hover {
+       border-color: #0d6efd;
+     }
+     
+     .file-upload i {
+       font-size: 24px;
+       color: #999;
+       margin-bottom: 10px;
+     }
+     
+     .file-upload p {
+       color: #666;
+       margin: 0;
+     }
+     
+     .submit-btn {
+       background-color: #0d6efd;
+       color: white;
+       border: none;
+       height: 50px;
+       padding: 0 30px;
+       border-radius: 5px;
+       font-weight: 600;
+       font-size: 16px;
+       cursor: pointer;
+       transition: all 0.3s ease;
+     }
+     
+     .submit-btn:hover {
+       background-color: #0b5ed7;
+     }
+     
+     .required-mark {
+       color: #dc3545;
+     }
+   </style>
 </head>
 
 <body>
@@ -52,7 +191,7 @@
             <div class="col-xxl-12">
                <div class="tj_search_wrapper">
                   <div class="search_form">
-                     <form action="#">
+                     <form action="#0">
                         <div class="search_input">
                            <h4 class="title">Search Blog, projects, Service or people.</h4>
                            <div class="search-box">
@@ -107,7 +246,7 @@
                </div>
                <div class="contact_item">
                   <span class="subtitle">Phone</span>
-                  <div class="text"><a class="link" href="tel:+61 426 179 366">+61 426 179 366
+                  <div class="text"><a class="link" href="tel:000123456789">+61 426 179 366
                   </a></div>
                </div>
                <div class="contact_item">
@@ -199,9 +338,6 @@
                               <a href="/blog/blog.html">Blog</a>
                            </li>
                            <li><a href="/contact/contact.html">Contact</a></li>
-                             <li class="has-dropdown ">
-                              <a href="/blog/blog.html">Appointment Now</a>
-                           </li>
                         </ul>
                      </div>
 
@@ -213,7 +349,7 @@
                         </button>
 
                         <!-- button -->
-                        <a href="/consultation/booking.html" class="tj-primary-btn header_btn">
+                        <a href="/contact/contact.html" class="tj-primary-btn header_btn">
                            <div class="btn_inner">
                               <div class="btn_icon">
                                  <span>
@@ -222,7 +358,7 @@
                                  </span>
                               </div>
                               <div class="btn_text">
-                                 <span>Book Now</span>
+                                 <span>Get a quote</span>
                               </div>
                            </div>
                         </a>
@@ -268,9 +404,6 @@
                               <a href="/blog/blog.html">Blog</a>
                            </li>
                            <li><a href="/contact/contact.html">Contact</a></li>
-                             <li class="has-dropdown ">
-                              <a href="/blog/blog.html">Appointment Now</a>
-                           </li>
                         </ul>
                      </div>
 
@@ -318,16 +451,16 @@
             <div class="row">
                <div class="col-lg-12">
                   <div class="tj-page-header-content text-center">
-                     <h1 class="tj-page-title text-anim">Contact</h1>
+                     <h1 class="tj-page-title text-anim">Booking Now</h1>
                      <div class="tj-page-link wow fadeInUp" data-wow-delay="0.1s">
                         <span>
-                           <a href="index.html">
+                           <a href="/index.html">
                               <span>Home</span>
                            </a>
                         </span>
                         <span>/</span>
                         <span>
-                           <span>Contact</span>
+                           <span>Booking</span>
                         </span>
                      </div>
                   </div>
@@ -336,151 +469,200 @@
          </div>
       </section>
       <!-- end: Breadcrumb Section -->
-      <!-- start: Contact Top Section -->
-       <section class="tj-contact-area section-space">
-         <div class="container">
-            <div class="row">
-               <div class="col-12">
-                  <div class="sec-heading text-center">
-                     <span class="sub-title wow fadeInUp" data-wow-delay="0.1s">CONTACT US</span>
-                     <h2 class="sec-title text-anim">Our contact information</h2>
+      
+      <!-- start: Booking Form Section -->
+      <section class="booking-form-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="booking-form-container">
+                <div class="booking-form-title">
+                  <h3>Business Registration Form</h3>
+                  <p>Please fill out the form below to register your business with us</p>
+                </div>
+                
+                <form id="businessRegistrationForm" action="#" method="POST">
+                  <!-- Business Information -->
+                  <div class="form-group">
+                    <label for="legalName">Legal Name <span class="required-mark">*</span></label>
+                    <input type="text" class="form-control" id="legalName" name="legalName" placeholder="Legal Name" required>
                   </div>
-               </div>
+                  
+                  <div class="form-group">
+                    <label for="tradingName">Trading Name</label>
+                    <input type="text" class="form-control" id="tradingName" name="tradingName" placeholder="Trading Name">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="abn">ABN / Registration No</label>
+                    <input type="text" class="form-control" id="abn" name="abn" placeholder="ABN / Registration No">
+                  </div>
+                  
+                  <!-- Address Information -->
+                  <h4 style="margin-top: 30px; margin-bottom: 20px;">Address</h4>
+                  
+                  <div class="form-group">
+                    <label for="country">Country</label>
+                    <select class="form-control" id="country" name="country">
+                      <option value="Australia">Australia</option>
+                      <option value="New Zealand">New Zealand</option>
+                      <option value="United States">United States</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="Canada">Canada</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="addressLine1">Address Line 1 <span class="required-mark">*</span></label>
+                    <input type="text" class="form-control" id="addressLine1" name="addressLine1" placeholder="Address Line 1" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="addressLine2">Address Line 2</label>
+                    <input type="text" class="form-control" id="addressLine2" name="addressLine2" placeholder="Address Line 2">
+                  </div>
+                  
+                  <div class="form-row">
+                    <div class="form-col">
+                      <div class="form-group">
+                        <label for="suburb">Suburb <span class="required-mark">*</span></label>
+                        <input type="text" class="form-control" id="suburb" name="suburb" placeholder="Suburb" required>
+                      </div>
+                    </div>
+                    <div class="form-col">
+                      <div class="form-group">
+                        <label for="state">State <span class="required-mark">*</span></label>
+                        <input type="text" class="form-control" id="state" name="state" placeholder="State" required>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="postcode">Postcode <span class="required-mark">*</span></label>
+                    <input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" required>
+                  </div>
+                  
+                  <!-- Contact Information -->
+                  <h4 style="margin-top: 30px; margin-bottom: 20px;">Contact Information</h4>
+                  
+                  <div class="form-row">
+                    <div class="form-col">
+                      <div class="form-group">
+                        <label for="firstName">First Name <span class="required-mark">*</span></label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                      </div>
+                    </div>
+                    <div class="form-col">
+                      <div class="form-group">
+                        <label for="lastName">Last Name <span class="required-mark">*</span></label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Job Title">
+                  </div>
+                  
+                  <div class="form-row">
+                    <div class="form-col">
+                      <div class="form-group">
+                        <label for="phoneCountry">Country</label>
+                        <select class="form-control" id="phoneCountry" name="phoneCountry">
+                          <option value="Australia">Australia</option>
+                          <option value="New Zealand">New Zealand</option>
+                          <option value="United States">United States</option>
+                          <option value="United Kingdom">United Kingdom</option>
+                          <option value="Canada">Canada</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-col">
+                      <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="+61">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email">Email <span class="required-mark">*</span></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                  </div>
+                  
+                  <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Sign up for news and updates</label>
+                  </div>
+                  
+                  <!-- Additional Information -->
+                  <h4 style="margin-top: 30px; margin-bottom: 20px;">Additional Information</h4>
+                  
+                  <div class="form-group">
+                    <label for="marketingExecutive">Regional Marketing Executive/Manager</label>
+                    <select class="form-control" id="marketingExecutive" name="marketingExecutive">
+                      <option value="">Select an option</option>
+                      <option value="John Doe">John Doe</option>
+                      <option value="Jane Smith">Jane Smith</option>
+                      <option value="Robert Johnson">Robert Johnson</option>
+                    </select>
+                  </div>
+                  
+                  <!-- <div class="checkbox-group">
+                    <input type="checkbox" id="useMainContact" name="useMainContact">
+                  </div> -->
+                  
+                  <div class="form-group">
+                    <label for="financeEmail">Email address for finance related matter(s)</label>
+                    <input type="email" class="form-control" id="financeEmail" name="financeEmail" placeholder="Email address for finance related matter(s)">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="recruitCountries">Which countries do you predominantly recruit students from?</label>
+                    <input type="text" class="form-control" id="recruitCountries" name="recruitCountries" placeholder="Which countries do you predominantly recruit students from?">
+                  </div>
+                  
+                  <!-- File Uploads -->
+                  <div class="form-group">
+                    <label>Upload Company Registration Certificate</label>
+                    <div class="file-upload" id="registrationCertificateUpload">
+                      <i class="fa-solid fa-upload"></i>
+                      <p>Add a File</p>
+                      <input type="file" id="registrationCertificate" name="registrationCertificate" style="display: none;">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label>Upload Company Profile</label>
+                    <div class="file-upload" id="companyProfileUpload">
+                      <i class="fa-solid fa-upload"></i>
+                      <p>Add a File</p>
+                      <input type="file" id="companyProfile" name="companyProfile" style="display: none;">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label>Upload Company Bank Account Statement for commission payment</label>
+                    <div class="file-upload" id="bankStatementUpload">
+                      <i class="fa-solid fa-upload"></i>
+                      <p>Add a File</p>
+                      <input type="file" id="bankStatement" name="bankStatement" style="display: none;">
+                    </div>
+                  </div>
+                  
+                  <!-- Submit Button -->
+                  <div class="form-group" style="text-align: center; margin-top: 40px;">
+                    <button type="submit" class="submit-btn">Submit</button>
+                  </div>
+                </form>
+              </div>
             </div>
-            <div class="row rg-30">
-               <div class="col-xl-3 col-lg-6 col-sm-6">
-                  <div class="contact-item style-2 wow fadeInUp" data-wow-delay="0.1s">
-                     <div class="contact-icon">
-                        <i class="tji-email"></i>
-                     </div>
-                     <h3 class="contact-title">Email us</h3>
-                     <ul class="contact-list">
-                        <li><a href="mailto:info@skyconsultants.com.au">info@skyconsultants.com.au</a></li>
-                        <li><a href="mailto:info@skyconsultants.com.au">info@skyconsultants.com.au</a></li>
-                    </ul>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-6 col-sm-6">
-                  <div class="contact-item style-2 wow fadeInUp" data-wow-delay="0.3s">
-                     <div class="contact-icon">
-                        <i class="tji-phone"></i>
-                     </div>
-                     <h3 class="contact-title">Call us</h3>
-                     <ul class="contact-list">
-                        <li><a href="tel:52682145622">+61 426 179 366</a></li>
-                        <li><a href="tel:22635652552">+61 426 179 366</a></li>
-                    </ul>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-6 col-sm-6">
-                  <div class="contact-item style-2 wow fadeInUp" data-wow-delay="0.5s">
-                     <div class="contact-icon">
-                        <i class="tji-location"></i>
-                     </div>
-                     <h3 class="contact-title">Our Location</h3>
-                     <p>Unit 3 3 Stephens Avenue Torrensville SA 5031 Australia</p>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-6 col-sm-6">
-                  <div class="contact-item style-2 wow fadeInUp" data-wow-delay="0.7s">
-                     <div class="contact-icon">
-                        <i class="tji-chat"></i>
-                     </div>
-                     <h3 class="contact-title">Live chat</h3>
-                     <ul class="contact-list">
-                        <li><a href="mailto:info@skyconsultants.com.au">info@skyconsultants.com.au</a></li>
-                        <li class="active"><a href="contact.html">Need help?</a></li>
-                    </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-       </section>
-      <!-- end: Contact Top Section -->
-      <!-- start: Contact Bottom Section -->
-      <section class="tj-contact-area section-bottom-space">
-         <div class="container">
-            <div class="row rg-50">
-               <!-- contact form -->
-               <div class="col-lg-6">
-                  <div class="contact-form-one style-2 wow fadeInUp" data-wow-delay="0.1s">
-                     <h3 class="title text-anim">Feel free to <span>get in touch</span> or visit our location.</h3>
-                     <form action="#">
-                        <div class="row">
-                           <div class="col-sm-6">
-                              <div class="form-input">
-                                 <input type="text" id="first" name="name" placeholder="Full name*" required="">
-                              </div>
-                           </div>
-                           <div class="col-sm-6">
-                              <div class="form-input">
-                                 <input type="email" id="emailOne" name="email" placeholder="Email address*" required="">
-                              </div>
-                           </div>
-                           <div class="col-sm-6">
-                              <div class="form-input">
-                                 <input type="tel" id="tel" name="tel" placeholder="Phone number*" required="">
-                              </div>
-                           </div>
-                           <div class="col-sm-6">
-                              <div class="form-input">
-                                 <div class="tj-nice-select-box">
-                                    <div class="tj-select">
-                                       <select class="nice-select">
-                                          <option>Chose a option</option>
-                                          <option value="1">IT consulting</option>
-                                          <option value="2">Market research</option>
-                                          <option value="3">Business process</option>
-                                          <option value="4">Business consultancy</option>
-                                          <option value="5">Digital marketing</option>
-                                          <option value="6">Branding design</option>
-                                       </select>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="form-input input-textarea">
-                                 <textarea id="message" name="message" placeholder="Type message"></textarea>
-                              </div>
-                           </div>
-                           <div class="submit-button">
-                              <button type="submit" class="tj-primary-btn">
-                                 <span class="btn_inner">
-                                    <span class="btn_icon">
-                                       <span>
-                                          <i class="tji-arrow-right"></i>
-                                          <i class="tji-arrow-right"></i>
-                                       </span>
-                                    </span>
-                                    <span class="btn_text">
-                                       <span>Send message</span>
-                                    </span>
-                                 </span>
-                              </button>
-                           </div>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-               <!-- contact map -->
-               <div class="col-lg-6">
-                  <div class="google-map wow fadeInUp" data-wow-delay="0.3s">
-<iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.6240998935067!2d138.56019277575877!3d-34.921195372860334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0cf17b0eabcdd%3A0x7c7e8c8b48d9a81a!2s3%2F3%20Stephens%20Ave%2C%20Torrensville%20SA%205031%2C%20Australia!5e0!3m2!1sen!2sau!4v1715672933041!5m2!1sen!2sau" 
-  width="600" 
-  height="450" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-                  </div>
-               </div>
-            </div>
-         </div>
+          </div>
+        </div>
       </section>
-      <!-- end: Contact Bottom Section -->
+      <!-- end: Booking Form Section -->
+      
       <!-- start: Cta Section -->
       <section class="tj-cta-section">
          <div class="container">
@@ -488,10 +670,9 @@
                <div class="col-12">
                   <div class="cta-wrapper">
                      <div class="cta-title">
-                        <h2 class="title text-anim">Get consultant now!</h2>
-                     </div>
+                    </div>
                      <div class="cta-button wow fadeInUp" data-wow-delay="0.1s">
-                        <a href="#" class="tj-primary-btn white-btn">
+                        <a href="/consultation/booking.html" class="tj-primary-btn white-btn">
                            <div class="btn_inner">
                               <div class="btn_icon">
                                  <span>
@@ -500,7 +681,7 @@
                                  </span>
                               </div>
                               <div class="btn_text">
-                                 <span>Lets talk now</span>
+                                 <span>Book Now</span>
                               </div>
                            </div>
                         </a>
@@ -516,7 +697,7 @@
       <!-- end: Cta Section -->
    </main>
 
-     <!-- start: Footer Area -->
+      <!-- start: Footer Area -->
    <footer class="tj-footer-area">
       <div class="footer-top-area fix">
          <div class="container">
@@ -652,6 +833,34 @@
    <script src="js/venobox.min.js"></script>
    <script src="js/meanmenu.js"></script>
    <script src="js/main.js"></script>
+   
+   <!-- Form Upload Script -->
+   <script>
+     // Make the file upload divs clickable
+     document.addEventListener('DOMContentLoaded', function() {
+       const fileUploads = document.querySelectorAll('.file-upload');
+       
+       fileUploads.forEach(upload => {
+         upload.addEventListener('click', function() {
+           const inputId = this.id.replace('Upload', '');
+           document.getElementById(inputId).click();
+         });
+       });
+       
+       // Show file name when selected
+       const fileInputs = document.querySelectorAll('input[type="file"]');
+       fileInputs.forEach(input => {
+         input.addEventListener('change', function() {
+           if (this.files.length > 0) {
+             const uploadDiv = document.getElementById(this.id + 'Upload');
+             const fileName = this.files[0].name;
+             const p = uploadDiv.querySelector('p');
+             p.textContent = fileName;
+           }
+         });
+       });
+     });
+   </script>
 
-
-</body></html>
+</body>
+</html>

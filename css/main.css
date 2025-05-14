@@ -2141,7 +2141,7 @@ img {
 .footer-widget.footer-contact-infos .infos-item a {
   font-size: 16px;
   font-weight: var(--tj-fw-regular);
-  color: var(--tj-color-common-white);
+  color: #022279;
   position: relative;
   z-index: 1;
 }

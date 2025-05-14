@@ -594,7 +594,7 @@ img {
   line-height: 1;
   font-weight: var(--tj-fw-bold);
   color: var(--tj-color-common-white);
-  background-color: var(--tj-color-theme-dark);
+  background-color:#022279;
   padding: 5.5px;
   border-radius: 50px;
   position: relative;
@@ -926,7 +926,7 @@ img {
   z-index: 100;
 }
 .tj-header-area.header-1 .menu_btn {
-  color: var(--tj-color-common-white);
+  color: #022279;
   margin-left: 10px;
 }
 .tj-header-area.header-2 {
@@ -1699,7 +1699,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--tj-color-theme-dark);
+  background-color: white;
   z-index: -1;
   backdrop-filter: blur(37px);
 }
@@ -1721,7 +1721,7 @@ img {
   display: inline-block;
   font-size: 35px;
   line-height: 1;
-  color: var(--tj-color-common-white);
+  color: black;
 }
 @media (max-width: 575px) {
   .hamburger_close_btn {
@@ -1748,7 +1748,7 @@ img {
   height: 60px;
   line-height: 60px;
   padding: 0 25px;
-  background: rgba(247, 247, 247, 0.1);
+  background: rgba(14, 14, 14, 0.1);
   border: none;
   outline: none;
   font-size: 18px;
@@ -1758,13 +1758,13 @@ img {
 .hamburger_search .nice-select::-ms-input-placeholder,
 .hamburger_search input:not([type=submit]):not([type=radio]):not([type=checkbox])::-ms-input-placeholder,
 .hamburger_search input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(56, 55, 55, 0.6);
 }
 .hamburger_search select::placeholder,
 .hamburger_search .nice-select::placeholder,
 .hamburger_search input:not([type=submit]):not([type=radio]):not([type=checkbox])::placeholder,
 .hamburger_search input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(10, 9, 9, 0.6);
 }
 .hamburger_search button {
   position: absolute;
@@ -1776,7 +1776,7 @@ img {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 18px;
-  color: var(--tj-color-common-white);
+  color: black;
 }
 .hamburger_menu {
   display: block;
@@ -1858,7 +1858,7 @@ img {
 }
 
 .hamburger-title {
-  color: var(--tj-color-common-white);
+  color: #022279;
   font-size: 25px;
   margin-bottom: 20px;
   position: relative;
@@ -1872,17 +1872,17 @@ img {
   padding-top: 20px;
 }
 .contact-info .contact_item:first-child {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(15, 15, 15, 0.1);
 }
 .contact-info .contact_item .subtitle {
   display: block;
-  color: var(--tj-color-common-black-3);
+  color: #022279;
   font-size: 15px;
   line-height: 1;
   margin-bottom: 8px;
 }
 .contact-info .contact_item .text {
-  color: var(--tj-color-common-white);
+  color: #022279;
   font-size: 18px;
   line-height: 1;
 }
@@ -1918,14 +1918,14 @@ img {
   line-height: 1;
 }
 .hamburger-socials ul li a i {
-  color: var(--tj-color-heading-primary);
+  color: #022279;
 }
 .hamburger-socials ul li a:hover {
   background-color: var(--tj-color-theme-primary);
   color: var(--tj-color-common-white);
 }
 .hamburger-socials ul li a:hover i {
-  color: var(--tj-color-common-white);
+  color: #D80000;
 }
 
 .hamburger_logo .mobile_logo {
@@ -2141,7 +2141,7 @@ img {
 .footer-widget.footer-contact-infos .infos-item a {
   font-size: 16px;
   font-weight: var(--tj-fw-regular);
-  color: var(--tj-color-common-white);
+  color: #022279;
   position: relative;
   z-index: 1;
 }
@@ -2651,7 +2651,7 @@ img {
   width: 40px;
   height: 140px;
   text-align: center;
-  background: var(--tj-color-theme-primary);
+  background:#022279;
   color: var(--tj-color-common-white);
   border-radius: 25px;
   transition: all, 0.3s;
@@ -2880,7 +2880,7 @@ img {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: white;
+  background-color:white;
 }
 .tj-page-title {
   color: #022279;
@@ -2918,7 +2918,7 @@ img {
   z-index: 2;
 }
 .tj-page-link span {
-  color:#022279;
+  color: #022279;
   font-size: 16px;
   position: relative;
   display: inline-block;
@@ -3155,6 +3155,7 @@ img {
   letter-spacing: -0.025em;
   line-height: 1.1;
   margin-bottom: 20px;
+  font-size:50px;
 }
 .hero-content .hero-title .active-color {
   color: #022279;
@@ -3416,7 +3417,7 @@ img {
   mask-image: url(../images/h1-hero-video.svg);
   mask-repeat: no-repeat;
   mask-size: contain;
-  background-color: var(--tj-color-theme-dark);
+  background-color: white;
   mask-position: center;
   z-index: 1;
 }
@@ -3442,7 +3443,7 @@ img {
   animation: rotateImg 10s infinite linear;
 }
 .hero-circle .circle-wrap .rotate-image textPath {
-  fill: var(--tj-color-common-white);
+  fill: #D80000;
 }
 .hero-circle .circle-wrap .circle {
   display: inline-flex;
@@ -3450,7 +3451,7 @@ img {
   justify-content: center;
   width: 58px;
   height: 58px;
-  color: var(--tj-color-common-white);
+  color:white;
   background: var(--tj-color-theme-primary);
   border-radius: 50%;
   text-decoration: none;
@@ -3542,9 +3543,11 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  
 }
 .tj-feature-section .sec-heading .desc p:last-child {
   margin-bottom: 0;
+  
 }
 
 .tj-feature-section-two {
@@ -3556,6 +3559,10 @@ img {
   width: 100%;
   margin-left: 0;
   margin-bottom: 50px;
+  
+}
+.sec-title.text-anim{
+  color:#022279;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tj-feature-section-two .sec-heading .sec-title {
@@ -4339,7 +4346,7 @@ img {
   position: relative;
   padding-top: 120px;
   padding-bottom: 80px;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #022279;
   z-index: 1;
 }
 .tj-brand-section::before {
@@ -6100,16 +6107,14 @@ blockquote cite::before {
 .project-item .project-content .tag-list a {
   display: inline-flex;
   color: var(--tj-color-common-white-2);
-  background: rgba(247, 247, 247, 0.1);
   font-size: 14px;
   line-height: 1;
   font-weight: var(--tj-fw-regular);
   padding: 6px 10px;
-  border-radius: 40px;
 }
 .project-item .project-content .tag-list a:hover {
   color: var(--tj-color-common-white);
-  background-color: var(--tj-color-theme-primary);
+  background-color: #D80000;
 }
 .project-item:hover .project-image img {
   transform: scale(1.12);
@@ -7013,7 +7018,7 @@ blockquote cite::before {
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #06164A;
   position: relative;
   z-index: 5;
   margin-bottom: 30px;
@@ -10138,7 +10143,7 @@ blockquote cite::before {
   margin: 0 auto;
 }
 .contact-item.style-2:hover .contact-icon {
-  background: #022279;
+  background: var(--tj-color-theme-primary);
 }
 .contact-item.style-2:hover .contact-icon i {
   color: var(--tj-color-common-white);
@@ -10167,12 +10172,11 @@ blockquote cite::before {
 }
 .contact-item.style-2 .contact-icon i {
   font-size: 32px;
-  color: #022279;
+  color: var(--tj-color-theme-primary);
 }
 .contact-item.style-2 .contact-title {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #022279;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-item.style-2 .contact-title {
@@ -10368,7 +10372,7 @@ blockquote cite::before {
 /* START: CTA CSS */
 .tj-cta-section {
   position: relative;
-  background-color: var(--tj-color-theme-primary);
+  background-color: #022279;
   padding: 53px 0;
   z-index: 2;
 }
@@ -10867,7 +10871,7 @@ blockquote cite::before {
   font-weight: var(--tj-fw-bold);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #D80000;
+  color:#D80000;
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 15px;
@@ -10883,7 +10887,7 @@ blockquote cite::before {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-color:#D80000;
+  background-color: #D80000;
 }
 .sec-heading .sub-title::after {
   left: auto;
@@ -10891,7 +10895,6 @@ blockquote cite::before {
 }
 .sec-heading .sec-title {
   margin: 0;
-  color: #022279;
 }
 .sec-heading .sec-title span {
   color: var(--tj-color-theme-primary);
