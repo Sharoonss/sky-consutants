@@ -21,6 +21,138 @@
    <link rel="stylesheet" href="css/venobox.min.css">
    <link rel="stylesheet" href="css/meanmenu.css">
    <link rel="stylesheet" href="css/main.css">
+   
+   <!-- Internal CSS for Calendar and Book Now Button -->
+   <style>
+      /* Calendar Styles */
+      .calendar-section {
+         padding: 60px 0;
+         background-color: #f9f9f9;
+      }
+      
+      .calendar-container {
+         max-width: 800px;
+         margin: 0 auto;
+         background: #fff;
+         border-radius: 10px;
+         box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+         padding: 30px;
+      }
+      
+      .calendar-header {
+         text-align: center;
+         margin-bottom: 30px;
+      }
+      
+      .calendar-header h2 {
+         font-size: 32px;
+         color: #022279;
+         margin-bottom: 10px;
+      }
+      
+      .calendar-header p {
+         color: #666;
+         font-size: 16px;
+      }
+      
+      .calendar-grid {
+         display: grid;
+         grid-template-columns: repeat(7, 1fr);
+         gap: 10px;
+      }
+      
+      .calendar-day-header {
+         text-align: center;
+         font-weight: bold;
+         padding: 10px;
+         background: #022279;
+         color: white;
+         border-radius: 5px;
+      }
+      
+      .calendar-day {
+         text-align: center;
+         padding: 15px 10px;
+         border-radius: 5px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         background: #fff;
+         border: 1px solid #e0e0e0;
+      }
+      
+      .calendar-day:hover {
+         background: #f0f8ff;
+         transform: translateY(-2px);
+         box-shadow: 0 5px 15px rgba(2,34,121,0.1);
+      }
+      
+      .calendar-day.available {
+         border-left: 3px solid #022279;
+      }
+      
+      .calendar-day.unavailable {
+         color: #ccc;
+         background: #f9f9f9;
+         cursor: not-allowed;
+      }
+      
+      .calendar-day.selected {
+         background: #022279;
+         color: white;
+         border-color: #022279;
+      }
+      
+      /* Book Now Button Styles */
+      .book-now-container {
+         text-align: center;
+         margin-top: 40px;
+      }
+      
+      .book-now-btn {
+         display: inline-block;
+         background: #D80000;
+         color: white;
+         font-size: 18px;
+         font-weight: bold;
+         padding: 15px 40px;
+         border-radius: 50px;
+         text-decoration: none;
+         transition: all 0.3s ease;
+         border: none;
+         cursor: pointer;
+         box-shadow: 0 4px 15px rgba(216, 0, 0, 0.3);
+      }
+      
+      .book-now-btn:hover {
+         background: #b50000;
+         transform: translateY(-3px);
+         box-shadow: 0 6px 20px rgba(216, 0, 0, 0.4);
+      }
+      
+      .book-now-btn i {
+         margin-right: 10px;
+      }
+      
+      @media (max-width: 768px) {
+         .calendar-container {
+            padding: 15px;
+         }
+         
+         .calendar-grid {
+            gap: 5px;
+         }
+         
+         .calendar-day {
+            padding: 10px 5px;
+            font-size: 14px;
+         }
+         
+         .book-now-btn {
+            padding: 12px 30px;
+            font-size: 16px;
+         }
+      }
+   </style>
 </head>
 
 <body>
@@ -336,6 +468,86 @@
          </div>
       </section>
       <!-- end: Breadcrumb Section -->
+
+      <!-- START: Calendar and Booking Section -->
+      <section class="calendar-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="calendar-container">
+                     <div class="calendar-header">
+                        <h2>Book Your Consultation</h2>
+                        <p>Select a date from the calendar below to schedule your appointment</p>
+                     </div>
+                     
+                     <div class="calendar-grid">
+                        <!-- Calendar Day Headers -->
+                        <div class="calendar-day-header">Sun</div>
+                        <div class="calendar-day-header">Mon</div>
+                        <div class="calendar-day-header">Tue</div>
+                        <div class="calendar-day-header">Wed</div>
+                        <div class="calendar-day-header">Thu</div>
+                        <div class="calendar-day-header">Fri</div>
+                        <div class="calendar-day-header">Sat</div>
+                        
+                        <!-- Calendar Days - First Row -->
+                        <div class="calendar-day unavailable">28</div>
+                        <div class="calendar-day unavailable">29</div>
+                        <div class="calendar-day unavailable">30</div>
+                        <div class="calendar-day available">1</div>
+                        <div class="calendar-day available">2</div>
+                        <div class="calendar-day available">3</div>
+                        <div class="calendar-day unavailable">4</div>
+                        
+                        <!-- Calendar Days - Second Row -->
+                        <div class="calendar-day unavailable">5</div>
+                        <div class="calendar-day available">6</div>
+                        <div class="calendar-day available">7</div>
+                        <div class="calendar-day available">8</div>
+                        <div class="calendar-day available">9</div>
+                        <div class="calendar-day available">10</div>
+                        <div class="calendar-day unavailable">11</div>
+                        
+                        <!-- Calendar Days - Third Row -->
+                        <div class="calendar-day unavailable">12</div>
+                        <div class="calendar-day available">13</div>
+                        <div class="calendar-day available">14</div>
+                        <div class="calendar-day available">15</div>
+                        <div class="calendar-day available">16</div>
+                        <div class="calendar-day available">17</div>
+                        <div class="calendar-day unavailable">18</div>
+                        
+                        <!-- Calendar Days - Fourth Row -->
+                        <div class="calendar-day unavailable">19</div>
+                        <div class="calendar-day available">20</div>
+                        <div class="calendar-day available">21</div>
+                        <div class="calendar-day available">22</div>
+                        <div class="calendar-day available">23</div>
+                        <div class="calendar-day available">24</div>
+                        <div class="calendar-day unavailable">25</div>
+                        
+                        <!-- Calendar Days - Fifth Row -->
+                        <div class="calendar-day unavailable">26</div>
+                        <div class="calendar-day available">27</div>
+                        <div class="calendar-day available">28</div>
+                        <div class="calendar-day available">29</div>
+                        <div class="calendar-day available">30</div>
+                        <div class="calendar-day available">31</div>
+                        <div class="calendar-day unavailable">1</div>
+                     </div>
+                     
+                     <div class="book-now-container">
+                        <a href="mailto:info@skyconsultants.com.au?subject=Booking Request&body=I would like to book a consultation on: [Selected Date]" class="book-now-btn">
+                           <i class="fa-solid fa-calendar-check"></i> Book Now
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- END: Calendar and Booking Section -->
+      
       <!-- start: Contact Top Section -->
        <section class="tj-contact-area section-space">
          <div class="container">
@@ -653,5 +865,34 @@
    <script src="js/meanmenu.js"></script>
    <script src="js/main.js"></script>
 
+   <!-- Calendar and Booking JavaScript -->
+   <script>
+      // Make calendar days selectable
+      document.addEventListener('DOMContentLoaded', function() {
+         const availableDays = document.querySelectorAll('.calendar-day.available');
+         const bookNowBtn = document.querySelector('.book-now-btn');
+         let selectedDay = null;
+         
+         availableDays.forEach(day => {
+            day.addEventListener('click', function() {
+               // Remove selected class from previously selected day
+               if (selectedDay) {
+                  selectedDay.classList.remove('selected');
+               }
+               
+               // Add selected class to clicked day
+               this.classList.add('selected');
+               selectedDay = this;
+               
+               // Update the Book Now button href with the selected date
+               const currentMonth = new Date().toLocaleString('default', { month: 'long' });
+               const currentYear = new Date().getFullYear();
+               const selectedDate = `${currentMonth} ${this.textContent}, ${currentYear}`;
+               
+               bookNowBtn.href = `mailto:info@skyconsultants.com.au?subject=Booking Request&body=I would like to book a consultation on: ${selectedDate}`;
+            });
+         });
+      });
+   </script>
 
 </body></html>
