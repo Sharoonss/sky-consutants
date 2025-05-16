@@ -445,7 +445,7 @@
                            </li>
                            <li><a href="/contact/contact.html">Contact</a></li>
                              <li class="has-dropdown ">
-                              <a href="/blog/blog.html">Appointment Now</a>
+                              <a href="/consultation/booking.html">Appointment Now</a>
                            </li>
                         </ul>
                      </div>
@@ -514,7 +514,7 @@
                            </li>
                            <li><a href="/contact/contact.html">Contact</a></li>
                              <li class="has-dropdown ">
-                              <a href="/blog/blog.html">Appointment Now</a>
+                              <a href="/consultation/booking.html">Appointment Now</a>
                            </li>
                         </ul>
                      </div>
@@ -903,7 +903,32 @@
 
    <!-- Calendar and Booking JavaScript -->
    <script>
-    
+      // Make calendar days selectable
+      document.addEventListener('DOMContentLoaded', function() {
+         const availableDays = document.querySelectorAll('.calendar-day.available');
+         const bookNowBtn = document.querySelector('.book-now-btn');
+         let selectedDay = null;
+         
+         availableDays.forEach(day => {
+            day.addEventListener('click', function() {
+               // Remove selected class from previously selected day
+               if (selectedDay) {
+                  selectedDay.classList.remove('selected');
+               }
+               
+               // Add selected class to clicked day
+               this.classList.add('selected');
+               selectedDay = this;
+               
+               // Update the Book Now button href with the selected date
+               const currentMonth = new Date().toLocaleString('default', { month: 'long' });
+               const currentYear = new Date().getFullYear();
+               const selectedDate = `${currentMonth} ${this.textContent}, ${currentYear}`;
+               
+               bookNowBtn.href = `mailto:info@skyconsultants.com.au?subject=Booking Request&body=I would like to book a consultation on: ${selectedDate}`;
+            });
+         });
+      });
    </script>
 
 </body></html>
