@@ -159,6 +159,386 @@
      .required-mark {
        color: #dc3545;
      }
+     /* Calendar Section */
+.calendar-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.calendar-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.calendar-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.calendar-header h2 {
+  font-size: 32px;
+  color: #022279;
+  margin-bottom: 10px;
+}
+
+.calendar-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Booking Grid Layout */
+.booking-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #022279;
+}
+
+/* Calendar Navigation */
+.calendar-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #f0f0f0;
+}
+
+#current-month-display {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-day-header {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background: #022279;
+  color: white;
+  border-radius: 5px;
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 15px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+.calendar-day:hover {
+  background: #f0f8ff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(2, 34, 121, 0.1);
+}
+
+.calendar-day.available {
+  border-left: 3px solid #022279;
+}
+
+.calendar-day.unavailable {
+  color: #ccc;
+  background: #f9f9f9;
+  cursor: not-allowed;
+}
+
+.calendar-day.other-month {
+  color: #aaa;
+  background: #f5f5f5;
+}
+
+.calendar-day.selected {
+  background: #022279;
+  color: white;
+  border-color: #022279;
+}
+
+/* Time Slots */
+.time-slots-container {
+  height: 100%;
+}
+
+.time-slots-placeholder {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  color: #777;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 4px;
+}
+
+.time-slot {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.time-slot.available {
+  cursor: pointer;
+  border-left: 3px solid #022279;
+}
+
+.time-slot.available:hover {
+  background: #f0f8ff;
+  transform: translateY(-2px);
+}
+
+.time-slot.unavailable {
+  color: #ccc;
+  background: #f9f9f9;
+  cursor: not-allowed;
+}
+
+.time-slot.selected {
+  background: #022279;
+  color: white;
+  border-color: #022279;
+}
+
+/* Book Now Button */
+.book-now-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-now-btn {
+  display: inline-block;
+  background: #d80000;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(216, 0, 0, 0.3);
+}
+
+.book-now-btn:hover {
+  background: #b50000;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(216, 0, 0, 0.4);
+}
+
+.book-now-btn i {
+  margin-right: 10px;
+}
+
+.book-now-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Custom scrollbar for time slots */
+.time-slots-grid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.time-slots-grid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.time-slots-grid::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.time-slots-grid::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .calendar-container {
+    padding: 25px;
+  }
+
+  .calendar-header h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .calendar-section {
+    padding: 40px 0;
+  }
+
+  .calendar-container {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .calendar-header h2 {
+    font-size: 24px;
+  }
+
+  .calendar-header p {
+    font-size: 14px;
+  }
+
+  .calendar-grid {
+    gap: 6px;
+  }
+
+  .calendar-day-header {
+    padding: 8px 5px;
+    font-size: 14px;
+  }
+
+  .calendar-day {
+    padding: 12px 5px;
+    font-size: 14px;
+  }
+
+  .book-now-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 575px) {
+  .calendar-section {
+    padding: 30px 0;
+  }
+
+  .calendar-container {
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .calendar-header h2 {
+    font-size: 22px;
+  }
+
+  .calendar-grid {
+    gap: 4px;
+  }
+
+  .calendar-day-header {
+    padding: 6px 2px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+  .calendar-day {
+    padding: 10px 2px;
+    font-size: 12px;
+    border-radius: 4px;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .book-now-btn {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .calendar-container {
+    padding: 10px;
+  }
+
+  .calendar-header {
+    margin-bottom: 15px;
+  }
+
+  .calendar-header h2 {
+    font-size: 20px;
+  }
+
+  .calendar-header p {
+    font-size: 12px;
+  }
+
+  .calendar-grid {
+    gap: 3px;
+  }
+
+  .calendar-day-header {
+    padding: 5px 1px;
+    font-size: 10px;
+  }
+
+  .calendar-day {
+    padding: 8px 1px;
+    font-size: 11px;
+    min-height: 32px;
+  }
+
+  .book-now-container {
+    margin-top: 25px;
+  }
+
+  .book-now-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}  
    </style>
 </head>
 
@@ -472,7 +852,51 @@
          </div>
       </section>
       <!-- end: Breadcrumb Section -->
-      
+      <section class="calendar-section">
+            <div class="container">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <h2>Book Your Consultation</h2>
+                        <p>Select a date and time to schedule your appointment</p>
+                    </div>
+
+                    <div class="booking-grid">
+                        <div class="calendar-wrapper">
+                            <h3 class="section-title">Select a Date</h3>
+                            <div class="calendar-navigation">
+                                <button id="prev-month-btn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                                <h3 id="current-month-display">May 2025</h3>
+                                <button id="next-month-btn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+
+                            <div class="calendar-grid" id="calendar-grid">
+                                <!-- Day headers will be inserted by JavaScript -->
+                                <!-- Calendar days will be inserted by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="time-slots-wrapper">
+                            <h3 class="section-title" id="time-slots-title">Select a date first</h3>
+                            <div class="time-slots-container" id="time-slots-container">
+                                <div class="time-slots-placeholder" id="time-slots-placeholder">
+                                    <p>Please select a date first to view available time slots</p>
+                                </div>
+                                <div class="time-slots-grid" id="time-slots-grid">
+                                    <!-- Time slots will be inserted by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-now-container">
+                        <a href="mailto:info@skyconsultants.com.au?subject=Booking Request&body=I would like to book a consultation" 
+                           class="book-now-btn disabled" id="book-now-btn">
+                            <i class="fa-solid fa-calendar-check"></i> Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
       <!-- start: Booking Form Section -->
       <section class="booking-form-section">
         <div class="container">
@@ -863,6 +1287,316 @@
          });
        });
      });
+
+     document.addEventListener("DOMContentLoaded", () => {
+  // DOM Elements
+  const calendarGrid = document.getElementById("calendar-grid")
+  const currentMonthDisplay = document.getElementById("current-month-display")
+  const prevMonthBtn = document.getElementById("prev-month-btn")
+  const nextMonthBtn = document.getElementById("next-month-btn")
+  const timeSlotsTitle = document.getElementById("time-slots-title")
+  const timeSlotsGrid = document.getElementById("time-slots-grid")
+  const timeSlotsPlaceholder = document.getElementById("time-slots-placeholder")
+  const bookNowBtn = document.getElementById("book-now-btn")
+
+  // State variables
+  let currentMonth = new Date()
+  let selectedDate = null
+  let selectedTime = null
+  let calendarDays = []
+
+  // Day names for calendar headers
+  const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+
+  // Initialize the calendar
+  initCalendar()
+
+  // Event listeners for month navigation
+  prevMonthBtn.addEventListener("click", goToPreviousMonth)
+  nextMonthBtn.addEventListener("click", goToNextMonth)
+
+  // Function to initialize the calendar
+  function initCalendar() {
+    renderCalendarHeader()
+    updateCalendar()
+  }
+
+  // Render the calendar header (day names)
+  function renderCalendarHeader() {
+    dayNames.forEach((day) => {
+      const dayHeader = document.createElement("div")
+      dayHeader.className = "calendar-day-header"
+      dayHeader.textContent = day
+      calendarGrid.appendChild(dayHeader)
+    })
+  }
+
+  // Update the calendar for the current month
+  function updateCalendar() {
+    // Clear existing calendar days
+    while (calendarGrid.children.length > 7) {
+      calendarGrid.removeChild(calendarGrid.lastChild)
+    }
+
+    // Update month display
+    currentMonthDisplay.textContent = currentMonth.toLocaleDateString("en-US", {
+      month: "long",
+      year: "numeric",
+    })
+
+    // Generate calendar days
+    generateCalendarDays()
+
+    // Render calendar days
+    renderCalendarDays()
+  }
+
+  // Generate calendar days for the current month
+  function generateCalendarDays() {
+    calendarDays = []
+
+    const year = currentMonth.getFullYear()
+    const month = currentMonth.getMonth()
+
+    // Get the first day of the month
+    const firstDayOfMonth = new Date(year, month, 1)
+    const dayOfWeek = firstDayOfMonth.getDay()
+
+    // Get the last day of the month
+    const lastDayOfMonth = new Date(year, month + 1, 0)
+    const daysInMonth = lastDayOfMonth.getDate()
+
+    // Get the last day of the previous month
+    const lastDayOfPrevMonth = new Date(year, month, 0)
+    const daysInPrevMonth = lastDayOfPrevMonth.getDate()
+
+    // Add days from previous month
+    for (let i = dayOfWeek - 1; i >= 0; i--) {
+      const date = new Date(year, month - 1, daysInPrevMonth - i)
+      calendarDays.push({
+        date,
+        isCurrentMonth: false,
+        isAvailable: false,
+      })
+    }
+
+    // Add days from current month
+    for (let i = 1; i <= daysInMonth; i++) {
+      const date = new Date(year, month, i)
+      const isWeekend = date.getDay() === 0 || date.getDay() === 6
+      const today = new Date()
+      today.setHours(0, 0, 0, 0)
+
+      calendarDays.push({
+        date,
+        isCurrentMonth: true,
+        isAvailable: !isWeekend && date >= today, // Available if not weekend and not in the past
+      })
+    }
+
+    // Add days from next month
+    const remainingDays = 42 - calendarDays.length // 6 rows of 7 days
+    for (let i = 1; i <= remainingDays; i++) {
+      const date = new Date(year, month + 1, i)
+      calendarDays.push({
+        date,
+        isCurrentMonth: false,
+        isAvailable: false,
+      })
+    }
+  }
+
+  // Render calendar days
+  function renderCalendarDays() {
+    calendarDays.forEach((day) => {
+      const dayElement = document.createElement("div")
+
+      // Set classes based on day properties
+      const dayClasses = ["calendar-day"]
+      if (!day.isCurrentMonth) dayClasses.push("other-month")
+      if (day.isAvailable) dayClasses.push("available")
+      else dayClasses.push("unavailable")
+
+      // Check if this day is selected
+      if (selectedDate && isSameDay(day.date, selectedDate)) {
+        dayClasses.push("selected")
+      }
+
+      dayElement.className = dayClasses.join(" ")
+      dayElement.textContent = day.date.getDate()
+
+      // Add click event for available days
+      if (day.isAvailable) {
+        dayElement.addEventListener("click", () => selectDate(day.date))
+      }
+
+      calendarGrid.appendChild(dayElement)
+    })
+  }
+
+  // Select a date
+  function selectDate(date) {
+    selectedDate = date
+    selectedTime = null // Reset time selection
+
+    // Update calendar UI
+    updateCalendar()
+
+    // Update time slots
+    updateTimeSlots()
+
+    // Update book now button
+    updateBookNowButton()
+  }
+
+  // Update time slots based on selected date
+  function updateTimeSlots() {
+    if (!selectedDate) {
+      timeSlotsTitle.textContent = "Select a date first"
+      timeSlotsPlaceholder.style.display = "flex"
+      timeSlotsGrid.style.display = "none"
+      return
+    }
+
+    // Format date for display
+    const formattedDate = formatDate(selectedDate)
+    timeSlotsTitle.textContent = `Select a Time for ${formattedDate}`
+
+    // Show time slots grid, hide placeholder
+    timeSlotsPlaceholder.style.display = "none"
+    timeSlotsGrid.style.display = "grid"
+
+    // Clear existing time slots
+    timeSlotsGrid.innerHTML = ""
+
+    // Generate time slots
+    const timeSlots = generateTimeSlots()
+
+    // Generate unavailable slots (random for demo)
+    const unavailableSlots = generateUnavailableSlots(timeSlots, selectedDate)
+
+    // Render time slots
+    timeSlots.forEach((time) => {
+      const timeSlotElement = document.createElement("div")
+
+      // Set classes based on availability
+      const isAvailable = !unavailableSlots.includes(time)
+      const timeSlotClasses = ["time-slot"]
+
+      if (isAvailable) timeSlotClasses.push("available")
+      else timeSlotClasses.push("unavailable")
+
+      // Check if this time is selected
+      if (selectedTime === time) {
+        timeSlotClasses.push("selected")
+      }
+
+      timeSlotElement.className = timeSlotClasses.join(" ")
+      timeSlotElement.textContent = time
+
+      // Add click event for available time slots
+      if (isAvailable) {
+        timeSlotElement.addEventListener("click", () => selectTime(time))
+      }
+
+      timeSlotsGrid.appendChild(timeSlotElement)
+    })
+  }
+
+  // Generate time slots from 9 AM to 6 PM
+  function generateTimeSlots() {
+    const slots = []
+    for (let hour = 9; hour <= 18; hour++) {
+      // Convert to 12-hour format
+      const hourFormatted = hour > 12 ? hour - 12 : hour
+      const amPm = hour >= 12 ? "PM" : "AM"
+      slots.push(`${hourFormatted}:00 ${amPm}`)
+
+      // Add half-hour slots except for 6 PM
+      if (hour < 18) {
+        slots.push(`${hourFormatted}:30 ${amPm}`)
+      }
+    }
+    return slots
+  }
+
+  // Generate unavailable time slots (random for demo)
+  function generateUnavailableSlots(timeSlots, date) {
+    // Simulate different unavailable slots for different dates
+    // In a real app, this would be fetched from your backend
+    const dateString = formatDate(date)
+    const dateHash = dateString.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0)
+    const randomUnavailable = []
+
+    // Make some random slots unavailable based on the date
+    for (let i = 0; i < 5; i++) {
+      const randomIndex = (dateHash + i * 7) % timeSlots.length
+      randomUnavailable.push(timeSlots[randomIndex])
+    }
+
+    return randomUnavailable
+  }
+
+  // Select a time slot
+  function selectTime(time) {
+    selectedTime = time
+
+    // Update time slots UI
+    updateTimeSlots()
+
+    // Update book now button
+    updateBookNowButton()
+  }
+
+  // Update the book now button
+  function updateBookNowButton() {
+    if (selectedDate && selectedTime) {
+      // Enable button
+      bookNowBtn.classList.remove("disabled")
+
+      // Update href with selected date and time
+      const formattedDate = formatDate(selectedDate)
+      const emailBody = `I would like to book a consultation on: ${formattedDate} at ${selectedTime}`
+      bookNowBtn.href = `mailto:info@skyconsultants.com.au?subject=Booking Request&body=${encodeURIComponent(emailBody)}`
+    } else {
+      // Disable button
+      bookNowBtn.classList.add("disabled")
+      bookNowBtn.href =
+        "mailto:info@skyconsultants.com.au?subject=Booking Request&body=I would like to book a consultation"
+    }
+  }
+
+  // Format date as "Month Day, Year"
+  function formatDate(date) {
+    return date.toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    })
+  }
+
+  // Check if two dates are the same day
+  function isSameDay(date1, date2) {
+    return (
+      date1.getDate() === date2.getDate() &&
+      date1.getMonth() === date2.getMonth() &&
+      date1.getFullYear() === date2.getFullYear()
+    )
+  }
+
+  // Go to previous month
+  function goToPreviousMonth() {
+    currentMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1)
+    updateCalendar()
+  }
+
+  // Go to next month
+  function goToNextMonth() {
+    currentMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1)
+    updateCalendar()
+  }
+})
+
    </script>
 
 </body>
