@@ -1270,16 +1270,27 @@ img {
   .header-bottom {
     padding: 0;
   }
+  .header-wrapper {
+    display: flex
+;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:end;
+    gap: 15px;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-bottom {
     padding: 17px 0;
   }
+  
+
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .header-bottom {
     padding: 15px 0;
   }
+   
 }
 
 .header-wrapper {
