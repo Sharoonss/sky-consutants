@@ -2899,6 +2899,11 @@ img {
     text-align: center !important;
     margin-top: 105px;
 }
+.site-logo .logo {
+    display: inline-block;
+    max-width: 110px;
+    width: 100%;
+}
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tj-page-title {
@@ -2907,6 +2912,11 @@ img {
  .text-center {
     text-align: center !important;
     margin-top: 105px;
+}
+.site-logo .logo {
+    display: inline-block;
+    max-width: 110px;
+    width: 100%;
 }
 }
 .tj-page-link {

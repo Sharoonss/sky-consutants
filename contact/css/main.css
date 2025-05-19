@@ -2860,18 +2860,33 @@ img {
     padding-top: 210px;
     padding-bottom: 100px;
   }
+  .site-logo .logo {
+    display: inline-block;
+    max-width: 110px;
+    width: 100%;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tj-page-header {
     padding-top: 210px;
     padding-bottom: 80px;
   }
+  .site-logo .logo {
+    display: inline-block;
+    max-width: 110px;
+    width: 100%;
+}
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tj-page-header {
     padding-top: 140px;
     padding-bottom: 80px;
   }
+  .site-logo .logo {
+    display: inline-block;
+    max-width: 110px;
+    width: 100%;
+}
 }
 .tj-page-header::before {
   position: absolute;
