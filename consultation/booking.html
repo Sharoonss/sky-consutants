@@ -851,51 +851,8 @@
          </div>
       </section>
       <!-- end: Breadcrumb Section -->
-      <section class="calendar-section">
-            <div class="container">
-                <div class="calendar-container">
-                    <div class="calendar-header">
-                        <h2>Book Your Consultation</h2>
-                        <p>Select a date and time to schedule your appointment</p>
-                    </div>
-
-                    <div class="booking-grid">
-                        <div class="calendar-wrapper">
-                            <h3 class="section-title">Select a Date</h3>
-                            <div class="calendar-navigation">
-                                <button id="prev-month-btn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
-                                <h3 id="current-month-display">May 2025</h3>
-                                <button id="next-month-btn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
-                            </div>
-
-                            <div class="calendar-grid" id="calendar-grid">
-                                <!-- Day headers will be inserted by JavaScript -->
-                                <!-- Calendar days will be inserted by JavaScript -->
-                            </div>
-                        </div>
-
-                        <div class="time-slots-wrapper">
-                            <h3 class="section-title" id="time-slots-title">Select a date first</h3>
-                            <div class="time-slots-container" id="time-slots-container">
-                                <div class="time-slots-placeholder" id="time-slots-placeholder">
-                                    <p>Please select a date first to view available time slots</p>
-                                </div>
-                                <div class="time-slots-grid" id="time-slots-grid">
-                                    <!-- Time slots will be inserted by JavaScript -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="book-now-container">
-                        <a href="mailto:info@skyconsultants.com.au?subject=Booking Request&body=I would like to book a consultation" 
-                           class="book-now-btn disabled" id="book-now-btn">
-                            <i class="fa-solid fa-calendar-check"></i> Book Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="sharoonamant44/30min" style="min-width:320px;height:700px;"></div>
       <!-- start: Booking Form Section -->
       <section class="booking-form-section">
         <div class="container">
@@ -1123,7 +1080,7 @@
       <!-- end: Cta Section -->
    </main>
 
-      <!-- start: Footer Area -->
+     <!-- start: Footer Area -->
    <footer class="tj-footer-area">
       <div class="footer-top-area fix">
          <div class="container">
@@ -1134,13 +1091,18 @@
                         <h4 class="title">Our offices</h4>
                      </div>
                      <div class="infos-item">
-                        <span>Headquarters - Austraila</span>
+                        <span>Head Office - Adelaide South Australia</span>
+                        <p>Suite 103A, Level 10, 118 King William Street, Adelaide SA 5000</p>
+                        <a href="tel:+61 426 179 366">+61 426 179 366</a>
+                     </div>
+                     <div class="infos-item">
+                        <span> Office - Austraila</span>
                         <p>Unit 3 3 Stephens Avenue Torrensville SA 5031 Australia</p>
                         <a href="tel:+61 426 179 366">+61 426 179 366</a>
                      </div>
                    <div class="infos-item">
                         <span>Pakistan-Branch</span>
-                        <p>Johar Town Lahore</p>
+                        <p>388 Khayaban-e-Firdousi, Phase 1, Block F Johar Town, Lahore, 54600, Pakistan</p>
                      </div>
                   </div>
                </div>
@@ -1153,9 +1115,9 @@
                         <ul>
                            <li><a href="/contact/contact.html">Contact us</a></li>
                            <li><a href="/contact/contact.html">Privacy policy</a></li>
-                           <li><a href="/About/About.html">Parntership Registration</a></li>
-                           <li><a href="/blog/blog.html">About</a></li>
-                          <li><a href="/blog/blog.html">Destinations</a></li>
+                           <li><a href="/consultation/booking.html">Parntership Registration</a></li>
+                           <li><a href="/About/About.html">About</a></li>
+                          <li><a href="/index.html">Destinations</a></li>
                             <li><a href="/blog/blog.html">Blog</a></li>
 
                         </ul>  
@@ -1230,7 +1192,6 @@
       </div>
    </footer>
    <!-- end: Footer Area -->
-
    <!-- start: back to top -->
    <div class="back-to-top-wrapper">
       <button id="back_to_top" type="button" class="back-to-top-btn">
@@ -1259,9 +1220,12 @@
    <script src="js/venobox.min.js"></script>
    <script src="js/meanmenu.js"></script>
    <script src="js/main.js"></script>
-   
+   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
    <!-- Form Upload Script -->
    <script>
+
+    
      // Make the file upload divs clickable
      document.addEventListener('DOMContentLoaded', function() {
        const fileUploads = document.querySelectorAll('.file-upload');
