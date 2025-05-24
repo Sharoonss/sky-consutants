@@ -10429,7 +10429,7 @@ blockquote cite::before {
 }
 .cta-wrapper .cta-title .title {
   color: var(--tj-color-common-white);
-  font-size: 72px;
+  font-size:65px;
   letter-spacing: -0.025em;
   margin-bottom: 0;
   text-transform: uppercase;

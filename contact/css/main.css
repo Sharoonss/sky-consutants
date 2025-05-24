@@ -10099,10 +10099,10 @@ blockquote cite::before {
   border: 1px solid var(--tj-color-border-2);
 }
 .contact-form-one.style-2 .title {
-  color: var(--tj-color-heading-primary);
+  color: #022279;
 }
 .contact-form-one.style-2 .title span {
-  color: var(--tj-color-theme-primary);
+  color: #D80000;
 }
 .contact-form-one.style-2 .form-input {
   margin-bottom: 25px;
@@ -10141,6 +10141,7 @@ blockquote cite::before {
 .contact-form-one.style-2 .nice-select .list {
   margin-top: 0;
   border: 1px solid var(--tj-color-border-2);
+  width: 332px;
 }
 .contact-form-one.style-2 .nice-select .list:hover .option {
   color: var(--tj-color-text-body);
@@ -10170,10 +10171,10 @@ blockquote cite::before {
   margin: 0 auto;
 }
 .contact-item.style-2:hover .contact-icon {
-  background: var(--tj-color-theme-primary);
+  background: #022279;
 }
 .contact-item.style-2:hover .contact-icon i {
-  color: var(--tj-color-common-white);
+  color: #D80000;
   animation: wobble-horizontal-hover 1s ease-in-out 1;
 }
 .contact-item.style-2 .contact-icon {
@@ -10182,7 +10183,7 @@ blockquote cite::before {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: var(--tj-color-theme-bg-2);
+  background: #1f5afa65;
   border-radius: 50%;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -10199,7 +10200,7 @@ blockquote cite::before {
 }
 .contact-item.style-2 .contact-icon i {
   font-size: 32px;
-  color: var(--tj-color-theme-primary);
+  color: white;
 }
 .contact-item.style-2 .contact-title {
   font-size: 24px;
@@ -10424,7 +10425,7 @@ blockquote cite::before {
 }
 .cta-wrapper .cta-title .title {
   color: var(--tj-color-common-white);
-  font-size: 72px;
+  font-size:65px;
   letter-spacing: -0.025em;
   margin-bottom: 0;
   text-transform: uppercase;
