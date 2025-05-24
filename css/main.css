@@ -2082,7 +2082,6 @@ img {
         /* Footer Widget Styles */
         .footer-widget .footer-title .title {
             color: #D80000;
-            margin-bottom: 40px;
             font-size: 20px;
             font-weight: 600;
             letter-spacing: -0.025em;
@@ -2094,7 +2093,7 @@ img {
         }
 
         .footer-widget.footer-contact-infos .infos-item {
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -2109,6 +2108,7 @@ img {
             color: #022279;
             font-weight: 500;
             margin-bottom: 6px;
+            font-weight: 800;
         }
 
         .footer-widget.footer-contact-infos .infos-item p {
@@ -2201,7 +2201,7 @@ img {
         }
 
         .footer-widget.widget_nav_menu .widget-menu ul li a:hover {
-            color: #4f46e5;
+            color: #D80000;
         }
 
         /* Footer Logo */

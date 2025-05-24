@@ -1534,29 +1534,18 @@ Canada                                              <i class="tji-arrow-right"><
                             <div class="footer-title">
                                 <h4 class="title">Australia Office</h4>
                             </div>
-                            
-                            <!-- Australia Header (Clickable) -->
-                            <div class="infos-item">
-                                <div class="australia-header" onclick="toggleAustraliaLocations()">
-                                    <span>Australia Offices</span>
-                                    <i class="fa-solid fa-chevron-down toggle-icon" id="toggleIcon"></i>
-                                </div>
-                                
-                                <!-- Australia Locations (Collapsible) -->
-                                <div class="australia-locations" id="australiaLocations">
-                                    <div class="location-item">
-                                        <span>Head Office - Adelaide South Australia</span>
+                                <div class="infos-item">
+                                 <span>Head Office - Adelaide South Australia</span>
                                         <p>Suite 103A, Level 10, 118 King William Street, Adelaide SA 5000</p>
                                         <a href="tel:+61426179366">+61 426 179 366</a>
-                                    </div>
-                                    
-                                       <div class="location-item">
-                                        <span>Sydney Branch, NSW Australia</span>
+
+                              </div>
+                                  <div class="infos-item">
+                               <span>Sydney Branch, NSW Australia</span>
                                         <p>969-971 Canterbury Rd, Lakemba NSW 2195</p>
                                         <a href="tel:+61426179366">+61 426 179 366</a>
-                                    </div>
-                                </div>
-                            </div>
+
+                              </div>
                                <div class="footer-title">
                                 <h4 class="title">Pakistan Office</h4>
                             </div>
@@ -1636,15 +1625,25 @@ Canada                                              <i class="tji-arrow-right"><
                                     <div class="partner-logo">
                                         <img src="/logo/Group 102.png" alt="Institute Partner">
                                     </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- Partner Logos Gallery -->
+                            <div class="partner-gallery">
+                                <div class="partner-title">
+                                    <h4 class="title">Our Partners</h4>
+                                </div>
+                                <div class="partner-logos">
                                     <div class="partner-logo">
-                                        <img src="/logo/Group 109.png" alt="Academy Partner">
+                                        <img src="logo/Group 104.png" alt="University Partner">
                                     </div>
                                     <div class="partner-logo">
-                                        <img src="/logo/Group 107.png" alt="School Partner">
+                                        <img src="/logo/Group 101.png" alt="College Partner">
                                     </div>
                                     <div class="partner-logo">
-                                        <img src="/logo/Group 108.png" alt="School Partner">
+                                        <img src="/logo/Group 102.png" alt="Institute Partner">
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -1735,23 +1734,23 @@ Canada                                              <i class="tji-arrow-right"><
             lastScrollTop = scrollTop;
         });
     });
-     function toggleAustraliaLocations() {
-            const locations = document.getElementById('australiaLocations');
-            const icon = document.getElementById('toggleIcon');
+   //   function toggleAustraliaLocations() {
+   //          const locations = document.getElementById('australiaLocations');
+   //          const icon = document.getElementById('toggleIcon');
             
-            locations.classList.toggle('show');
-            icon.classList.toggle('rotated');
-        }
+   //          locations.classList.toggle('show');
+   //          icon.classList.toggle('rotated');
+   //      }
 
-        function handleNewsletterSubmit(event) {
-            event.preventDefault();
-            const email = document.getElementById('email').value;
+   //      function handleNewsletterSubmit(event) {
+   //          event.preventDefault();
+   //          const email = document.getElementById('email').value;
             
-            if (email) {
-                alert(`Thank you for subscribing with email: ${email}`);
-                document.getElementById('email').value = '';
-            }
-        }
+   //          if (email) {
+   //              alert(`Thank you for subscribing with email: ${email}`);
+   //              document.getElementById('email').value = '';
+   //          }
+   //      }
 
         // Add smooth scrolling for internal links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
