@@ -3093,7 +3093,7 @@ img {
 /* START: Hero CSS */
 .tj-hero-section {
   position: relative;
-  padding-top: 170px;
+  /* padding-top: 170px; */
   background-color: white;
   z-index: 1;
 }
@@ -3113,7 +3113,7 @@ img {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tj-hero-section {
-    padding-top: 235px;
+    padding-top: 335px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
