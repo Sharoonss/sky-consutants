@@ -3093,9 +3093,10 @@ img {
 /* START: Hero CSS */
 .tj-hero-section {
   position: relative;
-  /* padding-top: 170px; */
+  padding-top: 170px;
   background-color: white;
   z-index: 1;
+  margin-bottom: 120px;
 }
 .tj-hero-section::before {
   position: absolute;
