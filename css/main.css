@@ -3164,7 +3164,7 @@ img {
 
 .hero-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 20px;
   justify-content: space-between;
   align-items: center;
@@ -3202,7 +3202,7 @@ img {
 .hero-content {
   max-width: 665px;
   width: 100%;
-  padding-top: 80px;
+  padding-top:40px;
   position: relative;
   z-index: 1;
 }
@@ -3270,7 +3270,7 @@ img {
   }
   
   .hero-content .hero-title {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 25px;
   }
   
@@ -3292,7 +3292,7 @@ img {
   }
   
   .hero-content .hero-title {
-    font-size: 50px;
+    font-size: 48px;
   }
 }
 
