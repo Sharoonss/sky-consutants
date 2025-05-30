@@ -4913,6 +4913,7 @@ img {
 }
 .blog-wrapper .blog-item:first-child .blog-content .blog-title {
   font-size: 32px;
+  color:#022279;
 }
 .blog-wrapper .blog-item:first-child .blog-content .desc {
   display: block;
@@ -4978,9 +4979,10 @@ img {
   margin: 0;
   font-size: 24px;
   letter-spacing: -2.5%;
+  color:#022279;
 }
 .blog-item .blog-content .blog-title a:hover {
-  color: var(--tj-color-theme-primary);
+  color: #D80000;
   background-size: 100% 1px;
 }
 .blog-item .blog-content .desc {
