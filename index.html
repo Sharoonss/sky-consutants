@@ -251,6 +251,127 @@
          text-align: center;
          padding:20px 0px;
         }
+        .see-more-btn{
+         margin-top:10px;
+         color: #D80000;
+        }
+
+         .world-gallery-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .explore-nations-heading {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .country-showcase-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .nation-card-item {
+            /* background: white; */
+            /* border-radius: 15px; */
+            /* box-shadow: 0 8px 25px rgba(0,0,0,0.15); */
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            width: calc(25% - 1.125rem);
+            min-width: 250px;
+            cursor: pointer;
+        }
+
+        .nation-card-item:hover {
+            transform: translateY(-10px);
+            /* box-shadow: 0 15px 35px rgba(0,0,0,0.25); */
+        }
+
+        .flag-image-holder {
+            position: relative;
+            height: 180px;
+            overflow: hidden;
+        }
+
+        .national-flag-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .nation-card-item:hover .national-flag-image {
+            transform: scale(1.1);
+        }
+
+        .hover-info-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 2rem 1rem 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .nation-card-item:hover .hover-info-overlay {
+            transform: translateY(0);
+        }
+
+        .overlay-country-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .overlay-description-text {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+
+        .card-main-content {
+            padding: 1.5rem;
+            background: white;
+        }
+
+        .primary-nation-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .nation-stats-details {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 1024px) {
+            .nation-card-item {
+                width: calc(50% - 0.75rem);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nation-card-item {
+                width: 100%;
+            }
+            
+            .explore-nations-heading {
+                font-size: 2rem;
+            }
+        }
    </style>
 </head>
 
@@ -335,7 +456,7 @@
            <div class="contact-info">
                <div class="contact_item">
                   <span class="subtitle">Email</span>
-                  <div class="text"><a class="link" href="mailto:info@skyconsultants.com.au">info@skyconsultants.com.au</a></div>
+                  <div class="text"><a class="link" href="mailto:info@skyconsultants.com.au">info@skyconsultant.com</a></div>
                </div>
                <div class="contact_item">
                   <span class="subtitle">Phone</span>
@@ -389,7 +510,7 @@
                         </div>
                         <div class="info_item">
                            <span><i class="tji-email"></i></span>
-                           <a href="mailto:support@solvior.com">info@skyconsultants.com.au</a>
+                           <a href="mailto:support@solvior.com">info@skyconsultant.com</a>
                         </div>
                         <div class="info_item">
                            <select class="nice-select">
@@ -445,7 +566,7 @@
                         </button>
 
                         <!-- button -->
-                        <a href="/consultation/booking.html" class="tj-primary-btn header_btn">
+                        <a href="https://condat.com.au/condat/477/customer?method=website" class="tj-primary-btn header_btn">
                            <div class="btn_inner">
                               <div class="btn_icon">
                                  <span>
@@ -501,7 +622,7 @@
                            </li>
                            <li><a href="/contact/contact.html">Contact</a></li>
                              <li class="has-dropdown ">
-                              <a href="/consultation/booking.htmlgi">Appointment Now</a>
+                              <a href="/consultation/booking.html">Appointment Now</a>
                            </li>
                         </ul>
                      </div>
@@ -514,7 +635,7 @@
                         </button>
 
                         <!-- button -->
-                        <a href="/consultation/booking.html" class="tj-primary-btn header_btn">
+                        <a href="https://condat.com.au/condat/477/customer?method=website" class="tj-primary-btn header_btn">
                            <div class="btn_inner">
                               <div class="btn_icon">
                                  <span>
@@ -554,7 +675,7 @@
                   <div class="hero-content">
                      <h1 class="hero-title text-anim">Trusted Education & <span class="active-color"> Migration Consultants</span></h1>
                       <div class="desc wow fadeInUp" data-wow-delay="0.1s">
-                        <p>We are certified Migration services and student visa consultants dedicated to helping you study, work, or settle abroad with ease.</p>
+                        <p>We are certified migration services and student visa consultants, dedicated to helping you study, work, or settle abroad with ease through expert guidance, personalized support, and up-to-date immigration solutions.</p>
                      </div> 
                      <div class="wow fadeInUp" data-wow-delay="0.3s">
                         <a href="/contact/contact.html" class="tj-primary-btn hero-button">
@@ -623,21 +744,25 @@
                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div class="feature-item wow fadeInUp" data-wow-delay="0.1s">
                      <div class="feature-icon">
-                        <img src="images/quick.svg" alt="Icons">
+                        <img src="/admission-icon-red.png" alt="Icons">
                      </div>
                      <div class="feature-content">
                         <h5 class="title"> Student Admission Services
                         </h5>
                         <div class="desc">
-                           <p>Getting a student visa is simple and hassle-free with our expert online guidance and support.   </p>
+                           <p>Getting a student visa is simple and hassle-free with our expert online guidance, documentation support, and visa consultation.  </p>
                         </div>
                      </div>
+                     <a href="/services/services.html" class="see-more-btn">
+    See More
+    <span class="btn-icon">→</span>
+</a>
                   </div>
                </div>
                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div class="feature-item wow fadeInUp" data-wow-delay="0.3s">
                      <div class="feature-icon">
-                        <img src="images/expert.svg" alt="Icons">
+                        <img src="/ChatGPT Image Jun14.png" alt="Icons">
                      </div>
                      <div class="feature-content">
                         <h5 class="title"> Student Visa & Migration Consultancy
@@ -646,12 +771,16 @@
                            <p>Our certified education consultants help you choose the best course and institution for your future success.  </p>
                         </div>
                      </div>
+                                      <a href="/services/services.html" class="see-more-btn">
+    See More
+    <span class="btn-icon">→</span>
+</a>
                   </div>
                </div>
                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div class="feature-item wow fadeInUp" data-wow-delay="0.5s">
                      <div class="feature-icon">
-                        <img src="images/strategic.svg" alt="Icons">
+                        <img src="/ChatGPT_Image_Jun_14__2025__10_39_01_PM-removebg-preview.png" alt="Icons">
                      </div>
                      <div class="feature-content">
                         <h5 class="title">Skills Assessment & PR Pathway Services</h5>
@@ -659,12 +788,16 @@
                            <p>Explore top study abroad destinations and countries to kickstart your global education journey. </p>
                         </div>
                      </div>
+                                      <a href="/services/services.html" class="see-more-btn">
+    See More
+    <span class="btn-icon">→</span>
+</a>
                   </div>
                </div>
                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div class="feature-item wow fadeInUp" data-wow-delay="0.7s">
                      <div class="feature-icon">
-                        <img src="images/efficient.svg" alt="Icons">
+                        <img src="/12084392_red.png" alt="Icons">
                      </div>
                      <div class="feature-content">
                         <h5 class="title">Post-Study Career Support</h5>
@@ -675,6 +808,10 @@
                            </p>
                         </div>
                      </div>
+                                      <a href="/services/services.html" class="see-more-btn">
+    See More
+    <span class="btn-icon">→</span>
+</a>
                   </div>
                </div>
             </div>
@@ -891,7 +1028,7 @@
                            </div>
                         </div>
                         <div class="service-images hover:shine">
-                           <img src= "/slide4.jpg" alt="Images">
+                           <img src= "/slide3.png" alt="Images">
                         </div>
                      </div>
                   </div>
@@ -1176,107 +1313,12 @@ Their support helped us advance toward our long-term goals.</p>
                </div>
             </div>
          </div>
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-12">
-                  <div class="project-slider-one slider-drag wow fadeInUp" data-wow-delay="0.3s">
-                     <div class="swiper project-slider swiper-container">
-                        <div class="swiper-wrapper not-hide-cursor" data-cursor="DRAG">
-                           <div class="swiper-slide">
-                              <div class="project-item">
-                                 <div class="project-image">
-                                    <a class="cursor-hide" href="project-details.html">
-                                       <img src="/T (1).png" alt="Images">
-                                    </a>
-                                 </div>
-                                 <div class="project-content">
-                                    <div class="project-title">
-                                       <h4 class="title">
-                                          <a href="project-details.html">
-                                             USA
-                                             <i class="tji-arrow-right"></i>
-                                          </a>
-                                       </h4>
-                                       
-                                    </div>
-                                    <div class="tag-list">
-                                       <a href="project.html"><p>Diverse programs, innovation, and top-ranked institutions</p></a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="project-item">
-                                 <div class="project-image">
-                                    <a class="cursor-hide" href="project-details.html">
-                                       <img src="/T.png" alt="Images">
-                                    </a>
-                                 </div>
-                                 <div class="project-content">
-                                    <div class="project-title">
-                                       <h4 class="title">
-                                          <a href="project-details.html">
-                                             Austraila
-                                             <i class="tji-arrow-right"></i>
-                                          </a>
-                                       </h4>
-                                    </div>
-                                    <div class="tag-list">
-                                       <a href="project.html">Quality education, post-study work rights, and PR pathways</a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="project-item">
-                                 <div class="project-image">
-                                    <a class="cursor-hide" href="project-details.html">
-                                       <img src="/T (2).png" alt="Images">
-                                    </a>
-                                 </div>
-                                 <div class="project-content">
-                                    <div class="project-title">
-                                       <h4 class="title">
-                                          <a href="project-details.html">
-                                           United Kingdom
-                                             <i class="tji-arrow-right"></i>
-                                          </a>
-                                       </h4>
-                                    </div>
-                                    <div class="tag-list">
-                                       <a href="project.html">United Kingdom – Prestigious universities and work options after graduation</a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="project-item">
-                                 <div class="project-image">
-                                    <a class="cursor-hide" href="project-details.html">
-                                       <img src="/canada.png" alt="Images">
-                                    </a>
-                                 </div>
-                                 <div class="project-content">
-                                    <div class="project-title">
-                                       <h4 class="title">
-                                          <a href="project.html">
-Canada                                              <i class="tji-arrow-right"></i>
-                                          </a>
-                                       </h4>
-                                    </div>
-                                    <div class="tag-list">
-                                       <a href="project.html">Canada – Affordable education and immigrant-friendly policies
-</a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+         <main class="world-gallery-wrapper">
+        <!-- <header class="explore-nations-heading">Explore Countries</header> -->
+        <section class="country-showcase-grid" id="nationShowcaseGrid">
+            <!-- Cards will be generated by JavaScript -->
+        </section>
+    </main>
       </section>
       <!-- end: Project Section -->
 
@@ -1777,6 +1819,74 @@ Canada                                              <i class="tji-arrow-right"><
                 }
             });
         });
+ const countries = [
+            {
+                name: "United States",
+                flag: "/T (1).png",
+                info: "Land of the free, home of the brave. Known for its diverse landscapes and cultural melting pot."
+            },
+            {
+                name: "United Kingdom",
+                flag: "https://flagcdn.com/w640/gb.jpg",
+                info: "Rich in history and tradition. Famous for castles, tea, and the royal family."
+            },
+            {
+                name: "Austraila",
+                flag: "/Australia-Flag-2.jpg",
+                info: "Where ancient traditions meet cutting-edge technology. Home of sushi, anime, and cherry blossoms."
+            },
+            {
+                name: "Cyprus",
+                flag: "/img1.png",
+                capital: "Berlin",
+                population: "83 million",
+                info: "Engineering excellence and rich cultural heritage. Famous for Oktoberfest and automotive innovation."
+            },
+            {
+                name: "Georgia",
+                flag: "/georgia-flag.jpg",
+                info: "The epitome of romance and cuisine. Home to the Eiffel Tower and world-renowned art."
+            },
+            {
+                name: "Malta",
+                flag: "/Malta_Flag2.jpg",
+                info: "Land down under with unique wildlife. Famous for the Outback, Great Barrier Reef, and Sydney Opera House."
+            },
+            {
+                name: "Europe",
+                flag: "/eroupe.jpg",
+                info: "Great white north known for its natural beauty. Famous for maple syrup, hockey, and politeness."
+            },
+            {
+                name: "Canada",
+                flag: "/canada.jpg",
+                capital: "Brasília",
+                population: "215 million",
+                info: "Vibrant culture and stunning landscapes. Home to the Amazon rainforest and Carnival celebrations."
+            }
+        ];
+
+        function createNationCard(country) {
+            return `
+                <article class="nation-card-item">
+                    <figure class="flag-image-holder">
+                        <img src="${country.flag}" alt="${country.name} flag" class="national-flag-image">
+                        <figcaption class="hover-info-overlay">
+                            <h3 class="overlay-country-title">${country.name}</h3>
+                            <p class="overlay-description-text">${country.info}</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            `;
+        }
+
+        function renderNationCards() {
+            const showcaseGrid = document.getElementById('nationShowcaseGrid');
+            showcaseGrid.innerHTML = countries.map(country => createNationCard(country)).join('');
+        }
+
+        // Initialize cards when page loads
+        document.addEventListener('DOMContentLoaded', renderNationCards);
    </script>
 
 
