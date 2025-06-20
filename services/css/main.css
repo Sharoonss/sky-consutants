@@ -3036,13 +3036,13 @@ img {
   background-repeat: no-repeat;
 
   /* Overlay effect */
-  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  background-color: #0014495b;; /* Dark overlay */
   mix-blend-mode: overlay;
   opacity: 0.9;
 }
 
 .tj-page-title {
-  color: #022279;
+  color: #D80000;
   font-size: 48px;
   margin-bottom: 0;
 }
@@ -3076,7 +3076,6 @@ img {
 /* aaaaaaaa */
 }
 .tj-page-link {
-  margin-top:250px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -3103,7 +3102,7 @@ img {
   line-height: 1;
 }
 .tj-page-link span a:hover span {
-  color: var(--tj-color-theme-primary);
+  color: #D80000;
 }
 
 /* !END: Page Header CSS */
@@ -7368,7 +7367,7 @@ blockquote cite::before {
   height: 100px;
   line-height: 1;
   font-size: 70px;
-  color: var(--tj-color-theme-primary);
+  color:#D80000;
   background: var(--tj-color-theme-bg);
   border-radius: 50%;
   margin-bottom: 55px;
@@ -7394,6 +7393,7 @@ blockquote cite::before {
 }
 .service-style-2 .service-content .title {
   margin-bottom: 15px;
+  color: #022279;
 }
 .service-style-2 .service-content .desc p:last-child {
   margin-bottom: 0;
