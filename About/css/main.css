@@ -6991,7 +6991,7 @@ blockquote cite::before {
   font-family: var(--tj-ff-heading);
   font-weight: 600;
   display: inline-block;
-  background-color: var(--tj-color-theme-primary);
+  background-color: #D80000;
   color: var(--tj-color-common-white);
   padding: 5px 20px;
   border-radius: 30px;
